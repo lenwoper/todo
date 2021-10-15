@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Lobster&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          
+           
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        #all {
+            width: 240px;
+            text-align: center;
+            margin: auto;
+        }
+
+        #holder {
+            text-align: center;
+            width: 240px;
+            box-shadow: 0 0px 3px rgb(40, 191, 199);
+
+            padding-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        /* demo */
+        #demo {
+            padding-top: 20px;
+
+
+            width: 100%;
+            text-align: center;
+        }
+
+        #alerting {
+            box-shadow: inset 0 0px 3px rgb(40, 191, 199);
+            border-radius: 10px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-bottom: 10px;
+            width: 240px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        #alerting h3 {
+            font-family: 'Hina Mincho', serif;
+            color: rgb(40, 191, 199);
+
+            margin-top: -2px;
+            margin-bottom: -10px;
+            text-transform: uppercase;
+        }
+
+        #alerting p {
+            font-family: 'Hina Mincho', serif;
+            
+            margin-left: 10px;
+            color: rgb(135, 134, 132);
+            margin-right: 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            padding: 5px 5px 5px 5px;
+
+
+        }
+
+
+        #holding p {
+            float: left;
+        }
+
+
+        #alerting {
+
+            width: 240px;
+        }
+
+        #text2 {
+            font-family: 'Hina Mincho', serif;
+            outline: none;
+            border: none;
+            background: transparent;
+        
+            font-size: 14px;
+       
+
+            width: 200px;
+            color: black;
+            border-radius: 4px;
+            box-shadow: 0 0 5px #c0c0c0;
+            margin-bottom: 15px;
+            padding: 5px 5px 5px 5px;
+        }
+        #text{
+            font-family: 'Hina Mincho', serif;
+            outline: none;
+            border: none;
+            background: transparent;
+            color: black;
+        
+            font-size: 14px;
+            
+
+            width: 200px;
+       
+            border-radius: 4px;
+          box-shadow: 0 0 5px #c0c0c0;
+            margin-bottom: 15px;
+            padding: 5px 5px 5px 5px;
+        }
+
+        button {
+
+            width: 90px;
+            margin-left: 2px;
+            margin-right: 2px;
+            border-radius: 18px;
+            height: 35px;
+            font-size: 13px;
+            border: none;
+            background-image: linear-gradient(to right, rgb(40, 191, 199), rgb(208, 18, 221));
+            box-shadow: 0 2px 3px rgba(40, 191, 199, 0.585);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  -->
+    <div id="all">
+
+        <div id="holder">
+            
+            <p id="demo" title="Number of the Task"></p>
+            <h3>ADD TASK </h3>
+            <input type="text" onfocus="this.value=''" placeholder="Title" id="text2"> <br>
+          
+            <textarea name="" id="text" cols="8" onfocus="this.value=''" placeholder="Task" ></textarea>
+            <br> <button onclick="ssend()">ADD ➕</button>
+        </div>
+        <nav id="holding">
+
+        </nav>
+
+    </div>
+
+
+
+<script src="todo.js"></script>
+</body>
+
+</html>
